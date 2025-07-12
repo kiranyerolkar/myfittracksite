@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FitTrack - Fitness for Life</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="navbar">
+    <div class="logo">FitTrack</div>
+    <img src="https://play-lh.googleusercontent.com/Oj0e1pF7-SJRQZA_ujmh-GpmgypylsFl-OmrgbYAqL-kJuxOFygrU-L4AbE3pLjYmWE" alt="fitness logo">
+    <nav class="nav-links">
+      <a href="#">Home</a>
+      <a href="Features.html" blank> Features</a>
+      <a href="#">Pricing</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Track Your Fitness. Transform Your Life.</h1>
+      <p>FitTrack helps you stay on top of your fitness goals with smart tracking and AI-powered insights.</p>
+      <a href="#" class="cta-btn">Get Started</a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="feature">
+      <h3>Workout Logs</h3>
+      <p>Track your exercises and measure progress over time.</p>
+    </div>
+    <div class="feature">
+      <h3>Nutrition Plans</h3>
+      <p>Get personalized meal recommendations based on your goals.</p>
+    </div>
+    <div class="feature">
+      <h3>Progress Charts</h3>
+      <p>Visualize your gains and stay motivated every step of the way.</p>
+    </div>
+  </section>
+  <!-- Contact Section -->
+<section class="contact" id="contact">
+  <h2>Contact Us</h2>
+
+  <!-- Success message placeholder -->
+  <p id="success-message" style="color: green; display: none;">Registered Successfully!</p>
+
+  <form class="contact-form" id="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<script>
+  document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent form from submitting (default behavior)
+
+    // Optional: Clear the form fields
+    this.reset();
+
+    // Show success message
+    document.getElementById("success-message").style.display = "block";
+  });
+</script>
+
+<!-- Testimonials Section -->
+<section class="testimonials" id="testimonials">
+  <h2>What Our Users Say</h2>
+  <div class="testimonial-container">
+    <div class="testimonial-card">
+      <p>"FitTrack helped me lose 10kg and stay motivated. The charts are amazing!"</p>
+      <h4>– Sarah K.</h4>
+    </div>
+    <div class="testimonial-card">
+      <p>"I love how easy it is to track my meals and workouts. Highly recommend!"</p>
+      <h4>– Mike L.</h4>
+    </div>
+    <div class="testimonial-card">
+      <p>"The best fitness app I’ve used. Great design and awesome features."</p>
+      <h4>– Amanda R.</h4>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 FitTrack. All rights reserved.</p>
+  </footer>
+</body>
+</html>
